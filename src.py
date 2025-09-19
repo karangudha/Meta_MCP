@@ -22,20 +22,20 @@ META_API_BASE="https://graph.facebook.com/v21.0"
 #     "data":
 #     [
 #         {
-#             "account_id":"680771925065811",
-#             "id":"act_680771925065811" //this one use for login
+#             "account_id":"111111111111111",
+#             "id":"act_111111111111111" //this one use for login
 #         }
 #     ],
 #     "paging":
 #     {
 #         "cursors":
 #         {
-#             "before":"MTIwMjMzODUzOTgwODYwMjMz",
+#             "before":"",
 #         }
 #     }
 # }
 # For long live token :
-# GET https://graph.facebook.com/v20.0/oauth/access_token?grant_type=fb_exchange_token&client_id=act_680771925065811&client_secret=2478aa77a3b354c524ab667bd9cc7537&fb_exchange_token=EAAXysYZBkedQBPefTpvHe5vhJaoQxkvifzSpIRNHhdRYnr4goEWhN1wcfovcBu3rivPmfaBAzJcf4Vaf5R6hTSTpU6D9C6lZCacEqyNpCam3ek3A0vfTUh4NTxQy3AauRzjLBEQZAnABFFhIEPXoZAfhiOAuScZCyXZBu2u1c9b1JM82QW2KanX6GRq3EQZBM9ADeFVGghlVrOnA6nsrR9rHvLxK9xwl4AIiUC6jj4urwZDZD
+# GET https://graph.facebook.com/v20.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<client_id>&client_secret=<secret>&fb_exchange_token=<accesstoken>
 
 
 
