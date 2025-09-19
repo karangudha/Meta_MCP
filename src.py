@@ -15,7 +15,6 @@ AD_ACCOUNT_ID=os.environ.get("META_APP_ID")
 APP_SECRET=os.environ.get("META_APP_SECRET")
 ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN")
 META_API_BASE="https://graph.facebook.com/v21.0"
-# ACCESS_TOKEN="EAAXysYZBkedQBPXkKyNxQEaOs50ADs4ws2NUlOziQT15cRcMyeOyvjmOI7kiGJIXpDE5L3easXFR28kOpvKEcF7b70UStQLZCD5A6jpmfbyzSeFLxPobZBjZAhr46kpX3Xw8F2Rhs1AQlRnOb8T2rSOvwSPDpn5JZCyABhgqZCIlFoeYxZCDUGLO96nZC7IAGUjdM4i2VJzOIeagXi7SbHpMvZBLHLvpkO3B4a8QC3VWNUQZDZD"
 
 # How to get access token : login into meta app, required action, tools and give permisssion.
 # how i get this acount details : curl "https://graph.facebook.com/v20.0/me/adaccounts?access_token=<ACCESS_TOKEN>"
@@ -24,7 +23,7 @@ META_API_BASE="https://graph.facebook.com/v21.0"
 #     [
 #         {
 #             "account_id":"680771925065811",
-#             "id":"act_680771925065811" //this one i have to use for login
+#             "id":"act_680771925065811" //this one use for login
 #         }
 #     ],
 #     "paging":
@@ -59,14 +58,8 @@ async def account_info() -> dict | None:
             logging.error(f"Unexpected error: {e}")
             return None
         
-# right now im working on just ot get info of user account, 
-# for this user dont need to send any thing any 
-# 
-async def main():
-    result = await account_info()
-    # logging.info(f"respone: " {result.text})
+
 if __name__ == "__main__":
     # start mcp server and transport is comunication method, stdio is standard input/output
-    # mcp.run(transport='stdio')
-    asyncio.run(main())
+    mcp.run(transport='stdio')
 

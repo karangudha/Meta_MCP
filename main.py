@@ -1,18 +1,17 @@
 from mcp.server.fastmcp import FastMCP
 from facebook_business.api import FacebookAdsApi
 from facebook_business.adobjects.adaccount import AdAccount
+from dotenv import load_dotenv
 import os
 import asyncio
 
 
 mcp = FastMCP("meta_ads_sdk")
+load_dotenv()
 
-# APP_ID=os.environ.get("META_APP_ID")
-# APP_SECRET=os.environ.get("META_APP_SECRET")
-# ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN")
-APP_ID="act_680771925065811"
-APP_SECRET="2478aa77a3b354c524ab667bd9cc7537"
-ACCESS_TOKEN = "EAAXysYZBkedQBPbzp7LwZB2oO4rUjghzbCZCGoZBzs936qWfFZAgZBgWcssq7cTw0guLSSWw6qAOZCG49JHmxDKwo5IQGgC63ZBW3j08zZA9g6FqI6AvVduooiWaTwqkmQYYrklr2qy17sZBQ8W5gaXZBhw41Hax7sfySXBoZBzAPfsvMhkm0zKtDkY2gnWAdSxBZA1Fndf3HDspPFxzfvo15nQ09ew6ZARVqLR2mBmcTgDcthxqUZD"
+APP_ID=os.environ.get("META_APP_ID")
+APP_SECRET=os.environ.get("META_APP_SECRET")
+ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN")
 FacebookAdsApi.init(app_id=APP_ID, app_secret=APP_SECRET, access_token=ACCESS_TOKEN)
 
 @mcp.tool()
