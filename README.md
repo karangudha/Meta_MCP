@@ -12,6 +12,8 @@ This project integrates the **Meta Marketing API** with the **Model Context Prot
 * Environment variable support with `.env`.
 
 ---
+## Miro Link: https://miro.com/app/board/uXjVJGMa9ZQ=/
+
 
 ## 📦 Requirements
 
